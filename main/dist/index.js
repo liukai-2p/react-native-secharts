@@ -44,6 +44,7 @@ class Echarts extends Component {
             originWhitelist={['*']}
             useWebKit={true}  // ios使用最新webkit内核渲染
             allowUniversalAccessFromFileURLs={true}
+            androidHardwareAccelerationDisabled={true}
             geolocationEnabled={true}
             mixedContentMode={'always'}
             renderLoading={this.props.renderLoading || (() => <View style={{backgroundColor: this.props.backgroundColor}} />)} // 设置空View，修复ioswebview闪白
